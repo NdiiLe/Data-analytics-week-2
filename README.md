@@ -36,7 +36,9 @@ When creating a database table, the ordering of columns does not matter because 
 NON RELATIONAL DATABASE
 A nonrelational database does not have a predefined structure based on tabular data. The result is a highly flexible approach to storing data. However, the data types available in relational databases are absent. As a result, you need to know more about the data itself to interact with it. Data validation happens in code, as opposed to being done in the database. 
 ![image](https://github.com/NdiiLe/Data-analytics-week-2/assets/131252498/3f211695-b774-4a91-8425-0adc8103b7ce)
+
 Examples of a none relational database are:
+
 Key-Value
 Document
 Column-Family
