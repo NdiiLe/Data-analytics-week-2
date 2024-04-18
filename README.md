@@ -45,3 +45,37 @@ Column-Family
 Graph
 ![image](https://github.com/NdiiLe/Data-analytics-week-2/assets/131252498/d9e4ec12-75aa-443d-8a48-67133e29b181)
 
+
+ONLINE TRANSACTIONAL PROCESSING
+
+Wednesday, 17 April 2024
+09:52
+
+
+OLTP systems manage everyday transactions like flight reservations, online orders, and stock trades. They can handle high volumes of transactions, each involving small amounts of data, while efficiently reading and writing data.
+
+NORMALIZATION
+
+First normal form
+-every row in a table is unique and every column contains a unique value
+
+Second normal form
+-takes from 1NF
+-all nonprimary key values must depend on the entire primary key
+
+Third normal form
+-builds from 2NF
+-adds a rule stating all columns must depend on only the primary key
+
+ONLINE ANALYTICAL PROCESSING
+OLAP systems focus on the ability of organizations to analyze data. While OLAP and OLTP databases can both use relational database technology, their structures are fundamentally different. OLTP databases need to balance transactional read and write performance, resulting in a highly normalized design. Typically, OLTP databases are in 3NF.
+On the other hand, databases that power OLAP systems have a denormalized design. Instead of having data distributed across multiple tables, denormalization results in wider tables than those found in an OLTP database. It is more efficient for analytical queries to read large amounts of data for a single table instead of incurring the cost of joining multiple tables together.
+
+SCHEMA CONCEPTS
+The design of a database schema depends on its purpose, with normalized databases suitable for transactional systems and denormalized designs for analytical systems. Data warehouses aggregate data from various systems for analytics across an entire organization, while data marts focus on specific departmental needs. Data lakes store raw data in native formats, demanding additional knowledge for analytical utility. Relational databases enforce structure and business rules absent in data lakes. Design patterns for data warehouses and marts impact analytical efficiency, especially as data volume grows. Considerations like data source, frequency of changes, and persistence duration are vital in database schema life cycles. Creating a data mart within a data warehouse can cater to specific departmental analytics needs, such as analyzing employee trends in human resources.
+
+
+![image](https://github.com/NdiiLe/Data-analytics-week-2/assets/131252498/cc203b61-9b8a-49bf-b086-a1bafe99bf29)
+
+
+
