@@ -79,3 +79,28 @@ The design of a database schema depends on its purpose, with normalized database
 
 
 
+DATA ACQUISITION CONCEPTS
+
+Thursday, 18 April 2024
+09:48
+
+INTERGRATION
+Data from transactional systems is transferred to data warehouses and data marts for analysis, with different structures in OLTP and OLAP databases. The ETL method involves extracting, transforming, and loading data to move it between operational and analytical environments efficiently.
+
+1. Extract:  In the first phase, you extract data from the source system and place it in a staging area. The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible.
+2. Transform:  The second phase transforms the data. The goal is to reformat the data from its transactional structure to the data warehouse's analytical design.
+3. Load:  The purpose of the load phase is to ensure data gets into the analytical system as quickly as possible.
+
+Extract, Load, and Transform is a method used for extracting, loading, and transforming data, which differs from ETL in that transformation happens within the data warehouse using SQL. ELT offers speed advantages in moving data from operational to analytical databases, making it ideal for handling large amounts of data quickly. The choice between ETL and ELT depends on organizational requirements, staff skills, and technical approach. ELT is beneficial for scenarios where rapid data transfer is essential, especially when the data warehouse has high capacity.
+
+ETL Vendors
+When choosing between ETL and ELT for loading your data warehouse, you don't need to manually write transformations as many products support both options. It is important to carefully assess both free and paid options to find the best fit for your specific needs and system architecture goals.
+
+Initial load is the first time data is transferred to a data warehouse, with subsequent loads being delta loads that only move changes between systems.
+
+
+
+
+
+
+![image](https://github.com/NdiiLe/Data-analytics-week-2/assets/131252498/2a7c40d7-f3ea-4347-9562-c107e294b5c3)
